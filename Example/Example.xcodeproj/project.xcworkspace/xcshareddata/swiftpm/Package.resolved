@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWPrint",
       "state" : {
-        "revision" : "6b70fabaa1dbeac95b224384819e231a1220900a",
-        "version" : "1.2.0"
+        "revision" : "8f5928f5d36624d77f8fc563fd8e31a59cfac6b6",
+        "version" : "1.3.1"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWSkeletonView",
       "state" : {
-        "branch" : "main",
-        "revision" : "5c7d3e93b662c7ab5b0725bf3ce3c49078ebd5e1"
+        "revision" : "27b0a5b412c47ae419ca028e17a2dacdb77f535c",
+        "version" : "1.0.0"
       }
     }
   ],
