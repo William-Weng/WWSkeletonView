@@ -38,7 +38,7 @@ public extension WWSkeletonView {
     func start() {
         
         let animation = basicAnimation(duration: duration, bounds: bounds)
-        let gradientLayer = gradientLayer(mainColor: mainColor, cornerRadius: layer.cornerRadius)
+        let gradientLayer = gradientLayer(mainColor: mainColor)
         
         gradientLayer.add(animation, forKey: "shimmer")
         
@@ -78,9 +78,8 @@ private extension WWSkeletonView {
     /// 漸層色產生器
     /// - Parameters:
     ///   - mainColor: UIColor
-    ///   - cornerRadius: CGFloat
     /// - Returns: CAGradientLayer
-    func gradientLayer(mainColor: UIColor, cornerRadius: CGFloat) -> CAGradientLayer {
+    func gradientLayer(mainColor: UIColor) -> CAGradientLayer {
         
         let colors: [UIColor] = [
             mainColor.withAlphaComponent(0.5),
