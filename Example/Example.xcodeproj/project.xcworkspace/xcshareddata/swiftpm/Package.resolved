@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWSkeletonView",
       "state" : {
-        "revision" : "27b0a5b412c47ae419ca028e17a2dacdb77f535c",
-        "version" : "1.0.0"
+        "revision" : "09907f069661ab44a572b07fcff612ce2b00d2e3",
+        "version" : "1.0.1"
       }
     }
   ],

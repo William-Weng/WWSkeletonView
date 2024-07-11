@@ -11,7 +11,6 @@ import UIKit
 @IBDesignable
 open class WWSkeletonView: UIView {
     
-    @IBInspectable var duration: Double = 1.0
     @IBInspectable var mainColor: UIColor = .gray
     
     private var gradientLayer: CAGradientLayer?
@@ -27,15 +26,14 @@ public extension WWSkeletonView {
     
     /// [參數設定](https://codepen.io/tag/skeleton)
     /// - Parameters:
-    ///   - duration: 動畫時間
     ///   - mainColor: 主色系
-    func settings(duration: Double, mainColor: UIColor) {
-        self.duration = duration
+    func settings(mainColor: UIColor) {
         self.mainColor = mainColor
     }
     
     /// [動畫開始](https://youtu.be/Qq3Evspeea8)
-    func start() {
+    /// - Parameter duration: CFTimeInterval
+    func start(duration: CFTimeInterval = 1.0) {
         
         let animation = basicAnimation(duration: duration, bounds: bounds)
         let gradientLayer = gradientLayer(mainColor: mainColor)

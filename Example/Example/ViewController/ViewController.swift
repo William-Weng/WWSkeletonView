@@ -20,7 +20,7 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func start(_ sender: UIBarButtonItem) {
-        mainSkeletonView.start()
+        mainSkeletonView.start(duration: 2.0)
         labelSkeletonViews.forEach { $0.start() }
     }
 }
@@ -29,6 +29,6 @@ final class ViewController: UIViewController {
 private extension ViewController {
     
     func initSetting() {
-        mainSkeletonView.settings(duration: 1.0, mainColor: .red)
+        mainSkeletonView.settings(mainColor: .red)
     }
 }
