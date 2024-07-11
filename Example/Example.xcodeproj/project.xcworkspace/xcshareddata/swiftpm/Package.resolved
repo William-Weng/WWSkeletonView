@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "wwprint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWPrint",
+      "state" : {
+        "revision" : "6b70fabaa1dbeac95b224384819e231a1220900a",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "wwskeletonview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWSkeletonView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5c7d3e93b662c7ab5b0725bf3ce3c49078ebd5e1"
+      }
+    }
+  ],
+  "version" : 2
+}
