@@ -23,11 +23,13 @@ open class WWSkeletonView: UIView {
 public extension WWSkeletonView {
     
     /// [動畫開始](https://youtu.be/Qq3Evspeea8)
-    /// - Parameter duration: [CFTimeInterval](https://codepen.io/tag/skeleton)
-    func start(duration: CFTimeInterval = 1.0) {
+    /// - Parameters:
+    ///   - duration: [CFTimeInterval](https://codepen.io/tag/skeleton)
+    ///   - middleColor: 中間的漸層色
+    func start(duration: CFTimeInterval = 1.0, middleColor: UIColor = .lightText) {
         
         let animation = basicAnimation(duration: duration, bounds: bounds)
-        let gradientLayer = gradientLayer(color: mainColor, alpha: alpha)
+        let gradientLayer = gradientLayer(mainColor: mainColor, middleColor: middleColor, alpha: alpha)
         
         gradientLayer.add(animation, forKey: "shimmer")
         
@@ -49,7 +51,6 @@ private extension WWSkeletonView {
     /// [初始化設定](https://bootcamp.uxdesign.cc/skeleton-vs-loading-screens-enhancing-user-experience-during-content-loading-and-data-fetching-3a07b1bdbc9c)
     func initSetting() {
         mainColor = backgroundColor ?? .gray
-        backgroundColor = mainColor.withAlphaComponent(alpha)
         layer.masksToBounds = true
     }
     
@@ -65,15 +66,16 @@ private extension WWSkeletonView {
     
     /// 漸層色產生器
     /// - Parameters:
-    ///   - color: UIColor
+    ///   - mainColor: UIColor
+    ///   - middleColor: UIColor
     ///   - alpha: CGFloat
     /// - Returns: CAGradientLayer
-    func gradientLayer(color: UIColor, alpha: CGFloat) -> CAGradientLayer {
+    func gradientLayer(mainColor: UIColor, middleColor: UIColor, alpha: CGFloat) -> CAGradientLayer {
         
         let colors: [UIColor] = [
-            color.withAlphaComponent(alpha),
-            color.withAlphaComponent(0.1),
-            color.withAlphaComponent(alpha)
+            mainColor,
+            middleColor,
+            mainColor
         ]
         
         let startPoint = CGPoint(x: 0, y: 0.5)

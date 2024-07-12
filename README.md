@@ -20,7 +20,7 @@ dependencies: [
 ### Function - 可用函式
 |函式|功能|
 |-|-|
-|start(duration:)|動畫開始|
+|start(duration:middleColor:)|動畫開始|
 |stop()|動畫停止|
 
 ### Example
