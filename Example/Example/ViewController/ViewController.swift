@@ -16,19 +16,10 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initSetting()
     }
     
     @IBAction func start(_ sender: UIBarButtonItem) {
         mainSkeletonView.start(duration: 2.0)
         labelSkeletonViews.forEach { $0.start() }
-    }
-}
-
-// MARK: - 小工具
-private extension ViewController {
-    
-    func initSetting() {
-        mainSkeletonView.settings(mainColor: .red)
     }
 }

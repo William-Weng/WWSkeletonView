@@ -11,7 +11,7 @@
 
 ```bash
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWSkeletonView.git", .upToNextMajor(from: "1.0.2"))
+    .package(url: "https://github.com/William-Weng/WWSkeletonView.git", .upToNextMajor(from: "1.0.3"))
 ]
 ```
 
@@ -20,7 +20,6 @@ dependencies: [
 ### Function - 可用函式
 |函式|功能|
 |-|-|
-|settings(mainColor:)|參數設定|
 |start(duration:)|動畫開始|
 |stop()|動畫停止|
 
@@ -33,19 +32,11 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initSetting()
     }
     
     @IBAction func start(_ sender: UIBarButtonItem) {
         mainSkeletonView.start(duration: 2.0)
         labelSkeletonViews.forEach { $0.start() }
-    }
-}
-
-private extension ViewController {
-    
-    func initSetting() {
-        mainSkeletonView.settings(mainColor: .red)
     }
 }
 ```
