@@ -23,7 +23,7 @@
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iMA-BD-Sxw">
                                         <rect key="frame" x="8" y="8" width="382" height="128"/>
                                         <subviews>
-                                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBP-FS-Gse" customClass="WWSkeletonView" customModule="WWSkeletonView">
+                                            <view clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBP-FS-Gse" customClass="WWSkeletonView" customModule="WWSkeletonView">
                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
