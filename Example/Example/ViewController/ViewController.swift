@@ -14,12 +14,8 @@ final class ViewController: UIViewController {
     @IBOutlet weak var mainSkeletonView: WWSkeletonView!
     @IBOutlet var labelSkeletonViews: [WWSkeletonView]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     @IBAction func start(_ sender: UIBarButtonItem) {
-        mainSkeletonView.start(duration: 2.0)
-        labelSkeletonViews.forEach { $0.start() }
+        mainSkeletonView.run(duration: 2.0)
+        labelSkeletonViews.forEach { $0.run() }
     }
 }

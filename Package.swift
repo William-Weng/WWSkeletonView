@@ -11,8 +11,11 @@ let package = Package(
     products: [
         .library(name: "WWSkeletonView", targets: ["WWSkeletonView"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/William-Weng/WWBarberPoleView", from: "1.2.2")
+    ],
     targets: [
-        .target(name: "WWSkeletonView", resources: [.copy("Privacy")]),
+        .target(name: "WWSkeletonView", dependencies: ["WWBarberPoleView"], resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5
