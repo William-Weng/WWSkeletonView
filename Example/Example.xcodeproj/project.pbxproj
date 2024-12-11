@@ -15,7 +15,8 @@
 		8130039027D5D18100436128 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130038F27D5D18100436128 /* Constant.swift */; };
 		81A863E82C3FD12300AAFFFD /* WWSkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 81A863E72C3FD12300AAFFFD /* WWSkeletonView */; };
 		81D992D12D09191400A41D36 /* WWSkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 81D992D02D09191400A41D36 /* WWSkeletonView */; };
-		81D992D42D091D0300A41D36 /* WWSkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 81D992D32D091D0300A41D36 /* WWSkeletonView */; };
+		81D992D72D091E3800A41D36 /* WWSkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 81D992D62D091E3800A41D36 /* WWSkeletonView */; };
+		81D992DA2D091E7200A41D36 /* WWSkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 81D992D92D091E7200A41D36 /* WWSkeletonView */; };
 		81E378AE2C40C2F3001C06CA /* WWSkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 81E378AD2C40C2F3001C06CA /* WWSkeletonView */; };
 /* End PBXBuildFile section */
 
@@ -35,9 +36,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D992D42D091D0300A41D36 /* WWSkeletonView in Frameworks */,
+				81D992D72D091E3800A41D36 /* WWSkeletonView in Frameworks */,
 				81D992D12D09191400A41D36 /* WWSkeletonView in Frameworks */,
 				81E378AE2C40C2F3001C06CA /* WWSkeletonView in Frameworks */,
+				81D992DA2D091E7200A41D36 /* WWSkeletonView in Frameworks */,
 				81A863E82C3FD12300AAFFFD /* WWSkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +137,8 @@
 				81A863E72C3FD12300AAFFFD /* WWSkeletonView */,
 				81E378AD2C40C2F3001C06CA /* WWSkeletonView */,
 				81D992D02D09191400A41D36 /* WWSkeletonView */,
-				81D992D32D091D0300A41D36 /* WWSkeletonView */,
+				81D992D62D091E3800A41D36 /* WWSkeletonView */,
+				81D992D92D091E7200A41D36 /* WWSkeletonView */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -166,7 +169,7 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				81D992D22D091D0300A41D36 /* XCRemoteSwiftPackageReference "WWSkeletonView" */,
+				81D992D82D091E7200A41D36 /* XCRemoteSwiftPackageReference "WWSkeletonView" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -413,12 +416,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		81D992D22D091D0300A41D36 /* XCRemoteSwiftPackageReference "WWSkeletonView" */ = {
+		81D992D82D091E7200A41D36 /* XCRemoteSwiftPackageReference "WWSkeletonView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWSkeletonView";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -432,9 +435,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = WWSkeletonView;
 		};
-		81D992D32D091D0300A41D36 /* WWSkeletonView */ = {
+		81D992D62D091E3800A41D36 /* WWSkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 81D992D22D091D0300A41D36 /* XCRemoteSwiftPackageReference "WWSkeletonView" */;
+			productName = WWSkeletonView;
+		};
+		81D992D92D091E7200A41D36 /* WWSkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81D992D82D091E7200A41D36 /* XCRemoteSwiftPackageReference "WWSkeletonView" */;
 			productName = WWSkeletonView;
 		};
 		81E378AD2C40C2F3001C06CA /* WWSkeletonView */ = {

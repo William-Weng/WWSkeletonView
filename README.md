@@ -20,7 +20,7 @@ dependencies: [
 ### [Function - 可用函式](https://ezgif.com/video-to-webp)
 |函式|功能|
 |-|-|
-|run(duration:middleColor:)|動畫開始|
+|run(duration:middleColor:width:spacing:)|動畫開始|
 |pause()|動畫暫停|
 
 ### Example

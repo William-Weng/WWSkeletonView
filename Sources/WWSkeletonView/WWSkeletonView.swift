@@ -16,9 +16,10 @@ public extension WWSkeletonView {
     
     /// [動畫開始](https://youtu.be/Qq3Evspeea8)
     /// - Parameters:
-    ///   - duration: [CFTimeInterval](https://codepen.io/tag/skeleton)
-    ///   - width: 寬度
+    ///   - duration: [時間](https://codepen.io/tag/skeleton)
     ///   - middleColor: 中間的漸層色
+    ///   - width: 寬度
+    ///   - spacing: 間隔
     func run(duration: CFTimeInterval = 1.0, middleColor: UIColor = .lightText, width: CGFloat = 128, spacing: CGFloat = 128) {
         
         let startPoint = CGPoint(x: 0.0, y: 0.5)
